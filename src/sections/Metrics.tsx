@@ -3,23 +3,6 @@ export default function Metrics() {
     { label: "Total funded", value: "$18M+" },
     { label: "Startups supported", value: "89" },
     { label: "International projects", value: "47" },
-    { label: "Angel investors", value: "500+" },
-    { label: "VCs & institutional funds", value: "100+" },
-    { label: "Countries in network", value: "15+" },
-  ];
-
-  const regionalSplit = [
-    { label: "Europe", value: 58 },
-    { label: "Asia", value: 16 },
-    { label: "Middle East", value: 12 },
-    { label: "North America", value: 8 },
-    { label: "Africa", value: 6 },
-  ];
-
-  const fundingStage = [
-    { label: "Series A", value: 68 },
-    { label: "Seed", value: 25 },
-    { label: "Series B", value: 7 },
   ];
 
   return (
@@ -54,70 +37,6 @@ export default function Metrics() {
             )}
           </div>
         ))}
-      </div>
-
-      {/* Chart Containers */}
-      <div className="grid gap-6 lg:grid-cols-2">
-        {/* Regional Split */}
-        <div className="rounded-2xl border border-gray-100/50 bg-white/40 p-6 backdrop-blur">
-          <div className="mb-4 flex items-center justify-between">
-            <h3 className="text-lg font-semibold text-gray-900">
-              Client Regional Split
-            </h3>
-            <span className="text-xs text-gray-500">Share of portfolio</span>
-          </div>
-          <ul role="list" className="space-y-3">
-            {regionalSplit.map((r) => (
-              <li key={r.label} className="grid grid-cols-12 items-center gap-3">
-                <div className="col-span-3 text-sm text-gray-600">{r.label}</div>
-                <div className="col-span-7">
-                  <div className="h-2 w-full rounded-full bg-gray-100">
-                    <div
-                      className="h-2 rounded-full bg-primary-blue"
-                      style={{ width: `${r.value}%` }}
-                      aria-label={`${r.label} ${r.value}%`}
-                    />
-                  </div>
-                </div>
-                <div className="col-span-2 text-right text-sm tabular-nums text-gray-700">
-                  {r.value}%
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Funding Stage */}
-        <div className="rounded-2xl border border-gray-100/50 bg-white/40 p-6 backdrop-blur">
-          <div className="mb-4 flex items-center justify-between">
-            <h3 className="text-lg font-semibold text-gray-900">
-              Funding Stage Distribution
-            </h3>
-            <span className="text-xs text-gray-500">Current focus</span>
-          </div>
-          <ul role="list" className="space-y-3">
-            {fundingStage.map((s) => (
-              <li key={s.label} className="grid grid-cols-12 items-center gap-3">
-                <div className="col-span-3 text-sm text-gray-600">{s.label}</div>
-                <div className="col-span-7">
-                  <div className="h-2 w-full rounded-full bg-gray-100">
-                    <div
-                      className="h-2 rounded-full bg-primary-blue/80"
-                      style={{ width: `${s.value}%` }}
-                      aria-label={`${s.label} ${s.value}%`}
-                    />
-                  </div>
-                </div>
-                <div className="col-span-2 text-right text-sm tabular-nums text-gray-700">
-                  {s.value}%
-                </div>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-4 text-xs text-gray-500">
-            Focused primarily on Series A, with Seed and select Series B.
-          </p>
-        </div>
       </div>
     </section>
   );
