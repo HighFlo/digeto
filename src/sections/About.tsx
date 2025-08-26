@@ -1,85 +1,168 @@
-export default function About() {
+import React from "react";
+
+import deepak from "../assets/team/deepak.png";
+import diogo from "../assets/team/diogo.png";
+import gregor from "../assets/team/gregor.png";
+import khushi from "../assets/team/khushi.png";
+import luis from "../assets/team/luis.png";
+import nandini from "../assets/team/nandini.png";
+import nikhil from "../assets/team/nikhil.png";
+import olivia from "../assets/team/olivia.png";
+import steven from "../assets/team/steven.png";
+
+type Member = {
+  name: string;
+  role: string;
+  description: string;
+  img: string;
+};
+
+const team: Member[] = [
+  {
+    name: "Deepak Peschard",
+    role: "CEO & Founder of Digeto",
+    description:
+      "20+ years of global leadership in banking, VC, and startups. VC & PE Investor at VU Venture Partners. Ex-Trade Officer at the French Foreign Ministry.",
+    img: deepak,
+  },
+  {
+    name: "Luís Guilherme Diniz",
+    role: "Director & Head of Edge",
+    description:
+      "25+ years helping founders expand globally with customer-focused, tech-driven strategies.",
+    img: luis,
+  },
+  {
+    name: "Nikhil P C",
+    role: "Head of Marketing & India Operations",
+    description:
+      "9+ years in growth, brand strategy, sales, and impact-driven initiatives.",
+    img: nikhil,
+  },
+  {
+    name: "Diogo Saraiva",
+    role: "Chief Technology Officer",
+    description:
+      "10+ years leading scalable digital transformations and end-to-end project execution.",
+    img: diogo,
+  },
+  {
+    name: "Nandini S Menon",
+    role: "People & Office Manager",
+    description:
+      "Experienced in digital marketing, team leadership, and operations management.",
+    img: nandini,
+  },
+  {
+    name: "Khushi Bhartiya",
+    role: "Venture Lead",
+    description:
+      "3+ years in financial analysis, investor relations, and venture deal management.",
+    img: khushi,
+  },
+];
+
+const board: Member[] = [
+  {
+    name: "Olivia Calvet-Soubiran",
+    role: "International Business Advisor",
+    description:
+      "30+ years in cross-border business, EU policy, and global expansion strategies.",
+    img: olivia,
+  },
+  {
+    name: "Steven Paul",
+    role: "Strategic Advisor",
+    description:
+      "25+ years in governance, leadership, and business transformation across 30+ markets.",
+    img: steven,
+  },
+  {
+    name: "Gregor Aschoff",
+    role: "ESG Advisor",
+    description:
+      "25+ years guiding growth and operational transformation in tech-driven industries.",
+    img: gregor,
+  },
+];
+
+const About: React.FC = () => {
   return (
-    <section
-      aria-labelledby="about-heading"
-      className="mx-auto w-full max-w-6xl px-6 py-16"
-    >
-      <div className="mx-auto max-w-4xl">
-        {/* Section Header */}
+    <section className="mx-auto w-full max-w-6xl px-6 py-16">
+      {/* Hero Section */}
+      <div className="mb-20 text-center">
+        <div className="mb-4 inline-block rounded-full border border-primary-blue/20 bg-primary-blue/5 px-5 py-2">
+          <span className="text-sm font-medium text-primary-blue">About Us</span>
+        </div>
+        
+        <h2 className="mb-6 text-4xl font-semibold text-gray-900 md:text-5xl">
+         Who are we?
+        </h2>
+        
+        <p className="mx-auto max-w-3xl text-lg text-gray-600">
+          We are a team of entrepreneurs, investors, and educators united by a single purpose: to <span className="text-primary-blue">accelerate positive global change</span>. We believe that by connecting the right talent with the right opportunities and providing strategic capital, we can empower <span className="text-primary-blue">the next generation of impact talent, leaders and businesses</span>.
+        </p>
+      </div>
+
+      {/* Leadership Team */}
+      <div className="mb-20">
         <div className="mb-12 text-center">
-          <div className="mb-4 inline-block rounded-full border border-primary-blue/20 bg-primary-blue/5 px-4 py-2">
-            <span className="text-sm font-medium text-primary-blue">Our Mission</span>
-          </div>
-          
-          <h2
-            id="about-heading"
-            className="text-5xl font-semibold tracking-tight text-gray-900"
-          >
-            Closing the Gap.{" "}
-            <span className="text-primary-blue">Building the Bridge.</span>
-          </h2>
+          <h3 className="mb-3 text-3xl font-bold text-gray-900">Leadership Team</h3>
+          <div className="mx-auto h-px w-16 bg-primary-blue"></div>
         </div>
-
-        {/* Main Content */}
-        <div className="space-y-8 text-center">
-          <div className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600 md:text-xl">
-            The most ambitious individuals want to solve pressing global challenges, 
-            but the path to a high-impact career can be unclear.
-          </div>
-          
-          <div className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600 md:text-xl">
-            At the same time, the most innovative impact-driven businesses struggle 
-            to find the right talent and strategic support to scale.
-          </div>
-          
-          <div className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600 md:text-xl">
-            We built <span className="font-semibold text-gray-900">The Bridge to Global Impact</span> to solve this.
-          </div>
-          
-          <div className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600 md:text-xl">
-            Our unique ecosystem provides the resources, talent, and network needed 
-            to accelerate a <span className="font-semibold text-primary-blue">mission-driven economy</span>.
-          </div>
+        
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {team.map((member) => (
+            <div
+              key={member.name}
+              className="group rounded-2xl border border-gray-100/50 bg-white/40 p-6 text-center backdrop-blur transition-all hover:border-primary-blue/20"
+            >
+              <img
+                src={member.img}
+                alt={member.name}
+                className="mx-auto mb-4 h-20 w-20 rounded-2xl border-2 border-primary-blue/10 object-cover transition-all group-hover:border-primary-blue/30"
+              />
+              <h4 className="mb-2 text-lg font-semibold text-gray-900">
+                {member.name}
+              </h4>
+              <p className="mb-3 text-sm font-medium text-primary-blue">
+                {member.role}
+              </p>
+            </div>
+          ))}
         </div>
+      </div>
 
-        {/* Visual Elements */}
-        <div className="mt-16 flex items-center justify-center">
-          <div className="flex items-center space-x-6">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-primary-blue/30 bg-primary-blue/10">
-              <span className="text-sm font-bold text-primary-blue">01</span>
-            </div>
-            
-            <div className="h-px w-16 bg-primary-blue/30"></div>
-            
-            <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-primary-blue/30 bg-primary-blue/10">
-              <span className="text-sm font-bold text-primary-blue">02</span>
-            </div>
-            
-            <div className="h-px w-16 bg-primary-blue/30"></div>
-            
-            <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-primary-blue bg-primary-blue">
-              <span className="text-sm font-bold text-white">03</span>
-            </div>
-          </div>
+      {/* Advisory Board */}
+      <div className="mb-12">
+        <div className="mb-12 text-center">
+          <h3 className="mb-3 text-3xl font-bold text-gray-900">Advisory Board</h3>
+          <div className="mx-auto h-px w-16 bg-primary-blue"></div>
         </div>
-
-        <div className="mt-8 grid gap-6 text-center md:grid-cols-3">
-          <div className="space-y-2">
-            <div className="text-sm font-semibold text-gray-900">Identify</div>
-            <div className="text-sm text-gray-500">Global challenges & opportunities</div>
-          </div>
-          
-          <div className="space-y-2">
-            <div className="text-sm font-semibold text-gray-900">Connect</div>
-            <div className="text-sm text-gray-500">Talent with impact businesses</div>
-          </div>
-          
-          <div className="space-y-2">
-            <div className="text-sm font-semibold text-gray-900">Accelerate</div>
-            <div className="text-sm text-gray-500">Mission-driven economy</div>
-          </div>
+        
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {board.map((member) => (
+            <div
+              key={member.name}
+              className="group rounded-2xl border border-gray-100/50 bg-white/40 p-6 text-center backdrop-blur transition-all hover:border-primary-blue/20"
+            >
+              <img
+                src={member.img}
+                alt={member.name}
+                className="mx-auto mb-4 h-20 w-20 rounded-2xl border-2 border-primary-blue/10 object-cover transition-all group-hover:border-primary-blue/30"
+              />
+              <h4 className="mb-2 text-lg font-semibold text-gray-900">
+                {member.name}
+              </h4>
+              <p className="mb-3 text-sm font-medium text-primary-blue">
+                {member.role}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default About;

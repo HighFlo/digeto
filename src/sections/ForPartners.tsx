@@ -1,48 +1,48 @@
-export default function ForTalent() {
+export default function ForPartners() {
   const benefits = [
     {
-      title: "Build Your Expertise",
+      title: "Curated Impact Deal Flow",
       description:
-        "Learn from seasoned experts and leaders who are on the front lines of global change.",
-      icon: "🎓",
+        "Access vetted startups building in climate, health, education, agritech, and more—screened for impact and scalability.",
+      icon: "🔎",
     },
     {
-      title: "Access the Network",
+      title: "Co-Invest & Collaborate",
       description:
-        "Get direct access to a talent pool and network that is sought after by leading impact organizations, VCs, and public agencies.",
-      icon: "🌐",
+        "Connect with a global network of founders and co-investors to structure strategic deals and partnerships.",
+      icon: "🤝",
     },
     {
-      title: "Create Lasting Change",
+      title: "ESG & Portfolio Support",
       description:
-        "Gain the skills and connections to land a job where you can make a tangible and lasting contribution to the world.",
-      icon: "🚀",
+        "Leverage our experts and EDGE talent to strengthen diligence, ESG practices, and hands-on value creation post-investment.",
+      icon: "📈",
     },
   ];
 
   return (
     <div className="mx-auto w-full max-w-5xl px-6 py-12">
-      {/* Hero Section - Centered */}
+      {/* Hero */}
       <div className="mb-16 text-center">
         <div className="mb-4 inline-block rounded-full border border-primary-blue/30 bg-primary-blue/10 px-5 py-2">
           <span className="text-sm font-semibold text-primary-blue">
-            For Talent
+            For Partners
           </span>
         </div>
 
         <h1 className="mb-6 text-5xl font-semibold text-gray-900">
-          Your Purpose.
+          Invest With Purpose.
           <br />
-          <span className="text-primary-blue">Your Profession.</span>
+          <span className="text-primary-blue">Lead the Future.</span>
         </h1>
 
         <p className="mx-auto max-w-2xl text-lg text-gray-600">
-          You have the passion. We have the bridge. Launch your career in the
-          impact sector with our three-month accelerator program.
+          Discover high-quality, impact-aligned opportunities and collaborate
+          with us to grow category-defining ventures.
         </p>
       </div>
 
-      {/* Benefits Section - Horizontal Cards */}
+      {/* Benefits */}
       <div className="mb-16">
         <div className="space-y-5">
           {benefits.map((benefit, index) => (

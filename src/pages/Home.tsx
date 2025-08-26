@@ -1,21 +1,23 @@
 import Hero from '../sections/Hero'
 import Metrics from '../sections/Metrics'
 import Navbar from '../sections/Navbar'
-import About from '../sections/About'
-import Structure from '../sections/Structure'
+import Mission from '../sections/Mission'
 import ForTalent from '../sections/ForTalent'
-import ForBusinesses from '../sections/ForBusinesses'
+import About from '../sections/About'
+import ForStartups from '../sections/ForStartups'
+import ForPartners from '../sections/ForPartners'
 
 export default function Home() {
   return (
     <main className="">
         <Navbar />
         <Hero />
-        <About />
+        <Mission />
         <Metrics/>
-        <Structure />
         <ForTalent />
-        <ForBusinesses />
+        <ForStartups />
+        <ForPartners />
+        <About />
     </main>
   )
 }
