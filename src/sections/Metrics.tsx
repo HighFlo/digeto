@@ -1,5 +1,6 @@
 export default function Metrics() {
   const kpis: { label: string; value: string; hint?: string }[] = [
+    { label: "Talents", value: "255" },
     { label: "Total funded", value: "$18M+" },
     { label: "Startups supported", value: "89" },
     { label: "International projects", value: "47" },
