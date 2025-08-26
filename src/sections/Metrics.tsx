@@ -24,7 +24,7 @@ export default function Metrics() {
       </div>
 
       {/* KPI Numbers - Clean Layout */}
-      <div className="mb-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mb-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 place-items-center">
         {kpis.map((kpi) => (
           <div key={kpi.label} className="text-center">
             <div className="text-5xl font-bold text-black md:text-6xl">
