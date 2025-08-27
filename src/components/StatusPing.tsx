@@ -1,9 +1,11 @@
 import React from "react";
-import { IconArrowRight } from '@tabler/icons-react';
+import { IconArrowRight } from "@tabler/icons-react";
 
 const StatusPing: React.FC = () => {
   const date = new Date();
-  const month = date.toLocaleString("en-US", { month: "short" });
+  const nextMonthDate = new Date(date);
+  nextMonthDate.setMonth(date.getMonth() + 1);
+  const month = nextMonthDate.toLocaleString("en-US", { month: "short" });
   const year = date.getFullYear();
 
   return (
@@ -18,7 +20,9 @@ const StatusPing: React.FC = () => {
       <div className="flex items-center space-x-3 text-sm text-gray-800">
         <span className="font-semibold">Join the next cohort</span>
         <span className="h-4 w-px bg-gray-300"></span>
-        <span>{month} {year}</span>
+        <span>
+          {month} {year}
+        </span>
       </div>
 
       {/* Arrow */}

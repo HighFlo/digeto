@@ -5,10 +5,10 @@ import diogo from "../assets/team/diogo.png";
 import gregor from "../assets/team/gregor.png";
 import khushi from "../assets/team/khushi.png";
 import luis from "../assets/team/luis.png";
-import nandini from "../assets/team/nandini.png";
 import nikhil from "../assets/team/nikhil.png";
 import olivia from "../assets/team/olivia.png";
 import steven from "../assets/team/steven.png";
+import maria from "../assets/team/maria.png";
 
 type Member = {
   name: string;
@@ -25,6 +25,13 @@ const team: Member[] = [
       "20+ years of global leadership in banking, VC, and startups. VC & PE Investor at VU Venture Partners. Ex-Trade Officer at the French Foreign Ministry.",
     img: deepak,
   },
+    {
+    name: "Maria Expósito Lorido",
+    role: "Chief Growth Officer",
+    description:
+      "",
+    img: maria
+  },
   {
     name: "Luís Guilherme Diniz",
     role: "Director & Head of Edge",
@@ -34,7 +41,7 @@ const team: Member[] = [
   },
   {
     name: "Nikhil P C",
-    role: "Head of Marketing & India Operations",
+    role: "Head of Marketing",
     description:
       "9+ years in growth, brand strategy, sales, and impact-driven initiatives.",
     img: nikhil,
@@ -45,13 +52,6 @@ const team: Member[] = [
     description:
       "10+ years leading scalable digital transformations and end-to-end project execution.",
     img: diogo,
-  },
-  {
-    name: "Nandini S Menon",
-    role: "People & Office Manager",
-    description:
-      "Experienced in digital marketing, team leadership, and operations management.",
-    img: nandini,
   },
   {
     name: "Khushi Bhartiya",

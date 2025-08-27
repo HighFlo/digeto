@@ -6,6 +6,8 @@ import ForTalent from '../sections/ForTalent'
 import About from '../sections/About'
 import ForStartups from '../sections/ForStartups'
 import ForPartners from '../sections/ForPartners'
+import Footer from '../sections/Footer'
+
 
 export default function Home() {
   return (
@@ -13,11 +15,12 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Mission />
+        <About />
         <Metrics/>
         <ForTalent />
         <ForStartups />
         <ForPartners />
-        <About />
+        <Footer />
     </main>
   )
 }

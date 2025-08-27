@@ -22,7 +22,7 @@ export default function Hero() {
       {/* Sections */}
       <section className="mt-12 grid max-w-6xl gap-6 md:grid-cols-3">
         {/* Talent */}
-        <div className="flex flex-col rounded-xl bg-gray-100 p-6 h-full">
+        <div className="flex flex-col rounded-xl bg-primary-blue/10 p-6 h-full">
           <h3 className="flex items-center space-x-2 text-lg font-semibold text-gray-900">
             <span>🌐</span>
             <span>Talent</span>
@@ -32,13 +32,13 @@ export default function Hero() {
             job opportunities, and work with the next generation of impactful
             ventures.
           </p>
-          <button className="self-start mt-4 inline-flex items-center rounded-md bg-teal-500 px-4 py-2 text-sm font-medium text-white hover:bg-teal-600">
+          <button className="self-start mt-4 inline-flex items-center rounded-md bg-primary-blue px-4 py-2 text-sm font-medium text-white hover:bg-primary-blue/70">
             Join now →
           </button>
         </div>
 
         {/* Startups */}
-        <div className="flex flex-col rounded-xl bg-gray-100 p-6 h-full">
+        <div className="flex flex-col rounded-xl bg-primary-blue/10 p-6 h-full">
           <h3 className="flex items-center space-x-2 text-lg font-semibold text-gray-900">
             <span>🚀</span>
             <span>Startups</span>
@@ -47,22 +47,21 @@ export default function Hero() {
             Secure smart capital, scale with expert support, and hire top Edge
             Talent to grow your venture.
           </p>
-          <button className="self-start mt-4 inline-flex items-center rounded-md bg-teal-500 px-4 py-2 text-sm font-medium text-white hover:bg-teal-600">
+          <button className="self-start mt-4 inline-flex items-center rounded-md bg-primary-blue px-4 py-2 text-sm font-medium text-white hover:bg-primary-blue/70">
             Connect →
           </button>
         </div>
 
         {/* Partners */}
-        <div className="flex flex-col rounded-xl bg-gray-100 p-6 h-full">
+        <div className="flex flex-col rounded-xl bg-primary-blue/10 p-6 h-full">
           <h3 className="flex items-center space-x-2 text-lg font-semibold text-gray-900">
             <span>💡</span>
             <span>Partners</span>
           </h3>
           <p className="mt-3 text-sm text-gray-600 flex-grow">
-            Connect with VCs and investors, and gain institutional support
-            alongside trusted business partners.
+            Become a pivotal part of the global movement toward a sustainable future. Partner with us to accelerate impactful solutions.
           </p>
-          <button className="self-start mt-4 inline-flex items-center rounded-md bg-teal-500 px-4 py-2 text-sm font-medium text-white hover:bg-teal-600">
+          <button className="self-start mt-4 inline-flex items-center rounded-md bg-primary-blue px-4 py-2 text-sm font-medium text-white hover:bg-primary-blue/70">
             Contact us →
           </button>
         </div>

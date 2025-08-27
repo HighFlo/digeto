@@ -6,5 +6,9 @@ button {
 
 
 @theme {
-    --color-primary-blue: #38b2ac;
+    --color-primary-blue: #389BDE;
+}
+
+html {
+  scroll-behavior: smooth;
 }

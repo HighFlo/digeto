@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
             href="#get-started"
             className="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg transition-colors"
           >
-            Get started
+            Book a meeting
           </a>
         </div>
       </div>
