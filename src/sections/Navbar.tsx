@@ -12,6 +12,9 @@ const Navbar: React.FC = () => {
 
         {/* Nav Links */}
         <div className="flex space-x-8 text-sm font-medium text-gray-700">
+          <a href="#about" className="hover:text-black transition-colors">
+            About us
+          </a>
           <a href="#talent" className="hover:text-black transition-colors">
             For talent
           </a>

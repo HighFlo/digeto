@@ -88,7 +88,7 @@ const board: Member[] = [
 
 const About: React.FC = () => {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 py-16">
+    <section id="about" className="mx-auto w-full max-w-6xl px-6 py-16">
       {/* Hero Section */}
       <div className="mb-20 text-center">
         <div className="mb-4 inline-block rounded-full border border-primary-blue/20 bg-primary-blue/5 px-5 py-2">
