@@ -12,7 +12,7 @@ const TermsOfService = () => {
         {/* HERO */}
         <div className="px-4 text-center mb-20">
           <div className="mb-4 inline-block rounded-full border border-primary-blue/20 bg-primary-blue/5 px-5 py-2">
-            <span className="text-sm font-medium text-primary-blue">Last Updated September 1, 2025</span>
+            <span className="text-sm font-medium text-primary-blue">Last Updated August 27, 2025</span>
           </div>
           <h2 className="mb-6 text-4xl font-semibold text-gray-900 md:text-5xl">
             Terms of Service

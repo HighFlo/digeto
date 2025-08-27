@@ -6,6 +6,7 @@ import Home from './pages/Home.tsx';
 import PrivacyPolicy from './pages/legal/PrivacyPolicy.tsx';
 import TermsOfService from './pages/legal/TermsOfService.tsx';
 import NotFound from './pages/NotFound.tsx';
+import Cookies from './pages/legal/Cookies.tsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "privacy-policy",
     element: <PrivacyPolicy />,
+  },
+  {
+    path: "cookies-policy",
+    element: <Cookies />,
   },
   {
     path: "*",

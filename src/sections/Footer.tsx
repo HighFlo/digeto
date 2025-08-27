@@ -98,6 +98,9 @@ const Footer: React.FC = () => {
             <a href="/privacy-policy" className="hover:underline underline-offset-4">
               Privacy Policy
             </a>
+            <a href="/cookies-policy" className="hover:underline underline-offset-4">
+              Cookies
+            </a>
           </nav>
         </div>
       </div>

@@ -12,16 +12,16 @@ const Navbar: React.FC = () => {
 
         {/* Nav Links */}
         <div className="flex space-x-8 text-sm font-medium text-gray-700">
-          <a href="#about" className="hover:text-black transition-colors">
+          <a href="/#about" className="hover:text-black transition-colors">
             About us
           </a>
-          <a href="#talent" className="hover:text-black transition-colors">
+          <a href="/#talent" className="hover:text-black transition-colors">
             For talent
           </a>
-          <a href="#startups" className="hover:text-black transition-colors">
+          <a href="/#startups" className="hover:text-black transition-colors">
             For startups
           </a>
-          <a href="#partners" className="hover:text-black transition-colors">
+          <a href="/#partners" className="hover:text-black transition-colors">
             For partners
           </a>
         </div>
