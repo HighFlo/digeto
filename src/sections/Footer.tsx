@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/digeto-compact-logo.svg";
+import logo from "../assets/digeto-main.png";
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
@@ -11,10 +11,7 @@ const Footer: React.FC = () => {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {/* Brand */}
           <div>
-            <div className="flex items-center space-x-3">
-              <img src={logo} alt="Digeto logo" className="h-8 w-8" />
-              <span className="text-xl font-semibold text-gray-900">Digeto</span>
-            </div>
+            <img src={logo} alt="Digeto logo" className="h-8 w-auto" />
             <p className="mt-4 text-gray-600">
               A Global Impact Services Company
             </p>
