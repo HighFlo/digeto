@@ -32,7 +32,7 @@ export default function Hero() {
             job opportunities, and work with the next generation of impactful
             ventures.
           </p>
-          <button className="self-start mt-4 inline-flex items-center rounded-md bg-primary-blue px-4 py-2 text-sm font-medium text-white hover:bg-primary-blue/70">
+          <button onClick={() => window.open("https://edge.digeto.com")} className="self-start mt-4 inline-flex items-center rounded-md bg-primary-blue px-4 py-2 text-sm font-medium text-white hover:bg-primary-blue/70">
             Join now →
           </button>
         </div>
@@ -47,7 +47,7 @@ export default function Hero() {
             Secure smart capital, scale with expert support, and hire top Edge
             Talent to grow your venture.
           </p>
-          <button className="self-start mt-4 inline-flex items-center rounded-md bg-primary-blue px-4 py-2 text-sm font-medium text-white hover:bg-primary-blue/70">
+          <button onClick={() => window.open("https://letsvai.com")} className="self-start mt-4 inline-flex items-center rounded-md bg-primary-blue px-4 py-2 text-sm font-medium text-white hover:bg-primary-blue/70">
             Connect →
           </button>
         </div>
@@ -61,7 +61,7 @@ export default function Hero() {
           <p className="mt-3 text-sm text-gray-600 flex-grow">
             Become a pivotal part of the global movement toward a sustainable future. Partner with us to accelerate impactful solutions.
           </p>
-          <button className="self-start mt-4 inline-flex items-center rounded-md bg-primary-blue px-4 py-2 text-sm font-medium text-white hover:bg-primary-blue/70">
+          <button onClick={() => window.open("https://calendly.com/deepak-digeto")} className="self-start mt-4 inline-flex items-center rounded-md bg-primary-blue px-4 py-2 text-sm font-medium text-white hover:bg-primary-blue/70">
             Contact us →
           </button>
         </div>

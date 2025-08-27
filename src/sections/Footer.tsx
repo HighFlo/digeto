@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
             </h3>
             <div className="mt-4 flex items-center gap-3">
               <a
-                href="https://www.linkedin.com"
+                onClick={() => window.open("https://www.linkedin.com/company/digeto/")}
                 aria-label="Digeto on LinkedIn"
                 className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-gray-200 hover:bg-gray-50"
               >
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                 </svg>
               </a>
               <a
-                href="https://x.com"
+                onClick={() => window.open("https://x.com/digeto_com")}
                 aria-label="Digeto on X (Twitter)"
                 className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-gray-200 hover:bg-gray-50"
               >
@@ -92,10 +92,10 @@ const Footer: React.FC = () => {
           <p>Copyright © {year} Digeto. All rights reserved.</p>
 
           <nav className="flex items-center gap-6">
-            <a href="/terms" className="hover:underline underline-offset-4">
+            <a href="/terms-of-service" className="hover:underline underline-offset-4">
               Terms of Service
             </a>
-            <a href="/privacy" className="hover:underline underline-offset-4">
+            <a href="/privacy-policy" className="hover:underline underline-offset-4">
               Privacy Policy
             </a>
           </nav>

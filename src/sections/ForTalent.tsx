@@ -86,7 +86,7 @@ export default function ForTalent() {
           Ready to launch your impact career?
         </h3>
         <a
-          href=""
+          onClick={() => window.open("https://edge.digeto.com")}
           className="inline-flex items-center gap-3 bg-primary-blue px-8 py-4 rounded-full text-base font-medium text-white transition-all duration-300 hover:bg-primary-blue/90 hover:shadow-lg hover:shadow-primary-blue/25 hover:-translate-y-0.5 group-hover:scale-105"
         >
           Join now

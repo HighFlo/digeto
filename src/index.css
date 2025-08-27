@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
-button {
+button, a {
     cursor: pointer;
 }
-
 
 @theme {
     --color-primary-blue: #389BDE;

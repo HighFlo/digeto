@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="Digeto Logo" className="h-8 w-auto" />
+          <img onClick={() => window.location.href="/"} src={logo} alt="Digeto Logo" className="h-8 w-auto cursor-pointer" />
         </div>
 
         {/* Nav Links */}
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
         {/* CTA */}
         <div>
           <a
-            href="#get-started"
+            onClick={() => window.open("https://calendly.com/deepak-digeto")}
             className="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg transition-colors"
           >
             Book a meeting
