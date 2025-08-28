@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
             <div>
               <a
                 onClick={() => window.open("https://calendly.com/deepak-digeto")}
-                className="hidden lg:block px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 bg-gray-100 rounded-lg transition-colors"
+                className="hidden lg:block px-4 py-2 text-sm font-medium text-white bg-primary-blue hover:bg-primary-blue/80 rounded-lg transition-colors"
               >
                 Book a meeting
               </a>
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
                 {/* CTA */}
                 <a
                   onClick={() => window.open("https://calendly.com/deepak-digeto")}
-                  className="mx-auto mt-10 px-4 py-2 text-xl font-medium text-gray-600 hover:text-gray-900 bg-gray-100 rounded-lg transition-colors"
+                  className="mx-auto mt-10 px-4 py-2 text-xl font-medium text-white bg-primary-blue hover:bg-primary-blue/80 rounded-lg transition-colors"
                 >
                   Book a meeting
                 </a>

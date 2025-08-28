@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import deepak from "../assets/team/deepak.png";
 import diogo from "../assets/team/diogo.png";
 import gregor from "../assets/team/gregor.png";
@@ -9,12 +10,14 @@ import nikhil from "../assets/team/nikhil.png";
 import olivia from "../assets/team/olivia.png";
 import steven from "../assets/team/steven.png";
 import maria from "../assets/team/maria.png";
+import { LucideLinkedin } from "lucide-react";
 
 type Member = {
   name: string;
   role: string;
   description: string;
   img: string;
+  linkedinURL: string;
 };
 
 const team: Member[] = [
@@ -24,13 +27,15 @@ const team: Member[] = [
     description:
       "20+ years of global leadership in banking, VC, and startups. VC & PE Investor at VU Venture Partners. Ex-Trade Officer at the French Foreign Ministry.",
     img: deepak,
+    linkedinURL: "https://www.linkedin.com/in/deepak-peschard/"
   },
     {
     name: "Maria Expósito Lorido",
     role: "Chief Growth Officer",
     description:
       "",
-    img: maria
+    img: maria,
+    linkedinURL: "https://www.linkedin.com/in/mexposlo/"
   },
   {
     name: "Luís Guilherme Diniz",
@@ -38,6 +43,7 @@ const team: Member[] = [
     description:
       "25+ years helping founders expand globally with customer-focused, tech-driven strategies.",
     img: luis,
+    linkedinURL: "https://www.linkedin.com/in/luisdiniz/"
   },
   {
     name: "Nikhil P C",
@@ -45,6 +51,7 @@ const team: Member[] = [
     description:
       "9+ years in growth, brand strategy, sales, and impact-driven initiatives.",
     img: nikhil,
+    linkedinURL: "https://www.linkedin.com/in/iamnikhilpc/"
   },
   {
     name: "Diogo Saraiva",
@@ -52,6 +59,7 @@ const team: Member[] = [
     description:
       "10+ years leading scalable digital transformations and end-to-end project execution.",
     img: diogo,
+    linkedinURL: "https://www.linkedin.com/in/diogosaraiva17/"
   },
   {
     name: "Khushi Bhartiya",
@@ -59,6 +67,7 @@ const team: Member[] = [
     description:
       "3+ years in financial analysis, investor relations, and venture deal management.",
     img: khushi,
+    linkedinURL: "https://www.linkedin.com/in/khushibhartiya/"
   },
 ];
 
@@ -69,6 +78,7 @@ const board: Member[] = [
     description:
       "30+ years in cross-border business, EU policy, and global expansion strategies.",
     img: olivia,
+    linkedinURL: "https://www.linkedin.com/in/olivia-calvet-soubiran-a5988a16/"
   },
   {
     name: "Steven Paul",
@@ -76,6 +86,7 @@ const board: Member[] = [
     description:
       "25+ years in governance, leadership, and business transformation across 30+ markets.",
     img: steven,
+    linkedinURL: "https://www.linkedin.com/in/stevenpaul-info/"
   },
   {
     name: "Gregor Aschoff",
@@ -83,6 +94,7 @@ const board: Member[] = [
     description:
       "25+ years guiding growth and operational transformation in tech-driven industries.",
     img: gregor,
+    linkedinURL: "https://www.linkedin.com/in/gregor-aschoff-gaicd-27a7b11/"
   },
 ];
 
@@ -122,9 +134,14 @@ const About: React.FC = () => {
                 alt={member.name}
                 className="mx-auto mb-4 h-20 w-20 rounded-2xl border-2 border-primary-blue/10 object-cover transition-all group-hover:border-primary-blue/30"
               />
-              <h4 className="mb-2 text-lg font-semibold text-gray-900">
-                {member.name}
-              </h4>
+              <div className="flex justify-center items-center gap-4">
+                <h4 className="mb-2 text-lg font-semibold text-gray-900">
+                  {member.name}
+                </h4>
+                <a onClick={() => window.open(`${member.linkedinURL}`)} className="p-2 bg-primary-blue/20 rounded-full -mt-2 hover:text-primary-blue">
+                  <LucideLinkedin />
+                </a> 
+              </div>
               <p className="mb-3 text-sm font-medium text-primary-blue">
                 {member.role}
               </p>
@@ -151,9 +168,14 @@ const About: React.FC = () => {
                 alt={member.name}
                 className="mx-auto mb-4 h-20 w-20 rounded-2xl border-2 border-primary-blue/10 object-cover transition-all group-hover:border-primary-blue/30"
               />
-              <h4 className="mb-2 text-lg font-semibold text-gray-900">
-                {member.name}
-              </h4>
+              <div className="flex justify-center items-center gap-4">
+                <h4 className="mb-2 text-lg font-semibold text-gray-900">
+                  {member.name}
+                </h4>
+                <a onClick={() => window.open(`${member.linkedinURL}`)} className="p-2 bg-primary-blue/20 rounded-full -mt-2 hover:text-primary-blue">
+                  <LucideLinkedin />
+                </a> 
+              </div>
               <p className="mb-3 text-sm font-medium text-primary-blue">
                 {member.role}
               </p>
