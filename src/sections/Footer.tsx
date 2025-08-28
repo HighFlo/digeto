@@ -89,13 +89,13 @@ const Footer: React.FC = () => {
           <p>Copyright © {year} Digeto. All rights reserved.</p>
 
           <nav className="flex items-center gap-6">
-            <a href="/terms-of-service" className="hover:underline underline-offset-4">
+            <a href="/legal/terms-of-service" className="hover:underline underline-offset-4">
               Terms of Service
             </a>
-            <a href="/privacy-policy" className="hover:underline underline-offset-4">
+            <a href="/legal/privacy-policy" className="hover:underline underline-offset-4">
               Privacy Policy
             </a>
-            <a href="/cookies-policy" className="hover:underline underline-offset-4">
+            <a href="/legal/cookies-policy" className="hover:underline underline-offset-4">
               Cookies
             </a>
           </nav>

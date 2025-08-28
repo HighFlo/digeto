@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
       <Navbar />
 
       {/* CONTENT */}
-      <section className="py-20 max-w-6xl mx-auto">
+      <section className="py-20 max-w-6xl mx-auto px-4">
 
         {/* HERO */}
         <div className="px-4 text-center mb-20">

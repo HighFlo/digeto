@@ -2,11 +2,11 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './pages/Home.tsx';
 import PrivacyPolicy from './pages/legal/PrivacyPolicy.tsx';
 import TermsOfService from './pages/legal/TermsOfService.tsx';
 import NotFound from './pages/NotFound.tsx';
 import Cookies from './pages/legal/Cookies.tsx';
+import Home from './pages/Home.tsx';
 
 const router = createBrowserRouter([
   {
@@ -14,15 +14,15 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "terms-of-service",
+    path: "/legal/terms-of-service",
     element: <TermsOfService />,
   },
   {
-    path: "privacy-policy",
+    path: "/legal/privacy-policy",
     element: <PrivacyPolicy />,
   },
   {
-    path: "cookies-policy",
+    path: "/legal/cookies-policy",
     element: <Cookies />,
   },
   {
